@@ -1,9 +1,6 @@
 # workout-tracker
 uses Mongoose and MongoDB to add workouts and track progress
 
-# tech-blog
-creates user profile. captures blog and comment events
-
 ## Table of Contents
 
   - [Description](#description)
