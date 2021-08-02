@@ -3,13 +3,13 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const ExerciseSchema = new Schema({
+  type: String, // for resistance (type, name, duration, wt, reps, sets)
   name: String,
-  type: String,
-  weight: Number,
-  sets: Number,
-  reps: Number,
   duration: Number,
-  distance: Number
+  weight: Number,
+  reps: Number,
+  sets: Number,
+  distance: Number // for cardio (type, name, duration, distance)
 });
 
 const Exercise = mongoose.model("Exercise", ExerciseSchema);
