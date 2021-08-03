@@ -1,9 +1,9 @@
 const router = require("express").Router();
-const Exercise = require("../models/Exercise.js");
+const Workout = require("../models/Workout.js");
 
 
 router.post("/api/workouts", ({ body }, res) => {
-  Exercise.create(body)
+  Workout.create(body)
     .then(dbWorkouts => {
       res.json(dbWorkouts);
     })
@@ -13,6 +13,7 @@ router.post("/api/workouts", ({ body }, res) => {
 });
 
 
+module.exports = router;
 
 
 
