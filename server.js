@@ -3,8 +3,7 @@ const mongoose = require("mongoose");
 
 const PORT = process.env.PORT || 3000
 
-const db = require("./models");
-
+// const db = require("./models");
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
@@ -16,24 +15,9 @@ const config = { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout-tracker", config);
 
-db.Workout.create({ type: "Resistance" })
-    .then(dbWorkout => {
-        console.log(dbWorkout);
-    })
-    .catch(({ message }) => {
-        console.log(message);
-    });
-
-db.Workout.create({ type: "Cardio" })
-    .then(dbWorkout => {
-        console.log(dbWorkout);
-    })
-    .catch(({ message }) => {
-        console.log(message);
-    });
-
 // routes
 app.use(require("./routes/api.js"));
+app.use(require("./routes/index.js"))
 
 app.listen(PORT, () => {
     console.log(`App running on ${PORT}`);

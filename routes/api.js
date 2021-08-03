@@ -26,3 +26,19 @@ router.post("/api/workouts", ({ body }, res) => {
 //       res.json(err);
 //     });
 // });
+
+// db.Workout.create({ type: "Resistance" })
+//     .then(dbWorkout => {
+//         console.log(dbWorkout);
+//     })
+//     .catch(({ message }) => {
+//         console.log(message);
+//     });
+
+// db.Workout.create({ type: "Cardio" })
+//     .then(dbWorkout => {
+//         console.log(dbWorkout);
+//     })
+//     .catch(({ message }) => {
+//         console.log(message);
+//     });
