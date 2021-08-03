@@ -19,7 +19,7 @@ const WorkoutSchema = new Schema({
     distance: Number,
     duration: {
       type: Number,
-      required: "Input your time in min"
+      required: "Enter your time in minutes"
     },
     weight: Number,
     sets: Number,
