@@ -10,7 +10,7 @@ const WorkoutSchema = new Schema({
   exercises: [{
     type: {
       type: String,
-      required: "Select Cardio & Resistance"
+      required: "Select Cardio or Resistance"
     },
     name: {
       type: String,
