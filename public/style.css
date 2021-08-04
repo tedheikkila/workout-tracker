@@ -17,11 +17,11 @@ body {
 }
 
 nav {
-  background-color: #5793fd;
+  background-color: rgb(230, 101, 27);
   color: #ffffff;
   padding: 24px;
   line-height: 3;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 a,
@@ -46,9 +46,13 @@ nav a:hover {
 
 header {
   height: 150px;
-  padding-top: 80px;
+  padding-top: 30px;
   text-align: center;
   font-size: 1.5rem;
+}
+
+#big-container {
+  margin-top: -50px;
 }
 
 select {
@@ -375,10 +379,6 @@ form > button {
   margin-bottom: 5px;
 }
 
-/* .workout .card {
-  width: 350px;
-} */
-
 .prev-workout button {
   margin: 10px;
 }
@@ -430,6 +430,11 @@ form > button {
 .cardio-form,
 .resistance-form {
   padding: 10px;
+}
+
+#stats-title {
+  margin-bottom: 50px;
+  margin-top: 30px;
 }
 
 @keyframes toast {
