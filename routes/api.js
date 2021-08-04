@@ -5,7 +5,6 @@ const db = require("../models")
 //gets last workout (tweak)
 router.get("/api/workouts", (req, res) => {
   db.Workout.find({})
-  .sort({ date: 1 })
   .then(dbWorkout => {
     res.json(dbWorkout)
   })
@@ -14,20 +13,9 @@ router.get("/api/workouts", (req, res) => {
   })
 })
 
-//gets workouts in range (tweak; what's range)
+//gets workouts in range (tweak; what's range?)
 router.get("/api/workouts/range", (req, res) => {
   db.Workout.find({})
-  .then(dbWorkout => {
-    res.json(dbWorkout)
-  })
-  .catch (err => {
-    res.json(err)
-  })
-})
-
-//gets a workout by its id (might not need later)
-router.get("/api/workouts/:id", (req, res) => {
-  db.Workout.findById(id)
   .then(dbWorkout => {
     res.json(dbWorkout)
   })

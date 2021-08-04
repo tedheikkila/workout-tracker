@@ -22,8 +22,8 @@ const WorkoutSchema = new Schema({
       required: "Enter your time in minutes"
     },
     weight: Number,
-    sets: Number,
-    reps: Number
+    reps: Number,
+    sets: Number
   }]
 });
 
