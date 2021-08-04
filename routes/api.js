@@ -1,6 +1,6 @@
 const router = require("express").Router();
-const Workout = require("../models/Workout.js");
 const db = require("../models")
+
 
 //gets last workout (tweak)
 router.get("/api/workouts", (req, res) => {
@@ -61,8 +61,4 @@ router.put("/api/workouts/:id", ({ body }, res) => {
 
 
 
-
-
-
 module.exports = router;
-
