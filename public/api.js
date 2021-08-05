@@ -1,3 +1,5 @@
+
+// client fetches (get, put, post requests)
 const API = {
   async getLastWorkout() {
     let res;

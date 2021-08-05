@@ -14,9 +14,9 @@ uses Mongoose and MongoDB to add workouts and track fitness progress
 
   ## Description
 
-  This app is designed for a user who wants to add workouts (cardio or resistance), continue their workout, and track their fitness stats over a weekly time period. It primarily uses mongoose and MongoDB to facilitate the capturing of user input into and out of Robo 3T/MongoDB Atlas. 
+  This app is designed for a user who wants to add workouts (cardio or resistance), continue their workout, and track their fitness stats over a weekly time period. It primarily uses express, mongoose, and MongoDB to facilitate the capturing of user input into and out of Robo 3T/MongoDB Atlas. 
   
-  Technologies used: Javascript, Node, MongoDB, mongoose, MongoDB Atlas, express, and nodemon (dev dep). See package.json file for complete list.
+  Technologies used: Javascript, Node, MongoDB, mongoose, MongoDB Atlas, express, and nodemon. See package.json file for complete list.
 
   To see Workout Tracker in action, check out the deployed app on Heroku here:
 
@@ -28,10 +28,10 @@ uses Mongoose and MongoDB to add workouts and track fitness progress
 
   ## Usage
 
-  Once the user hits the landing page, she/he sees the option to add a new workout or if familiar w/app continue an existing workout. There are two types of workouts: cardio and resistance. As the user enters in data their input is captured and accumulated for each workout. This is displayed on the homepage as the last workout and its relevant totals. Once the user is done they can see their progress for each day on a weekly basis. 
+  Once the user hits the landing page, she/he sees the option to add a new workout or if familiar w/app continue an existing workout. There are two types of workouts: cardio and resistance. As the user enters in data their input is captured and accumulated for each workout. This is displayed on the homepage as the last workout along with its relevant totals. Once the user is done they can see their progress for each day on a weekly basis via the workout dashboard/stats page.
 
   To run locally after installing and while developing, run this command `node server.js` or `npm start watch`.
-  To seed the database, first create a db in Robo 3T called workout, then run this command `npm run seed`.  
+  To seed the database, first create a db in Robo 3T called workout (all lowercase), then run this command `npm run seed`.  
 
   ## Contributing
   
@@ -63,13 +63,10 @@ uses Mongoose and MongoDB to add workouts and track fitness progress
 
   ![](./public/images/hw18-3.png)
 
-  * accumulated workouts
+  * accumulated workout totals
 
   ![](./public/images/hw18-4.png)
 
-  * workout dashboard
+  * workout dashboard/stats page
 
   ![](./public/images/hw18-5.png)
-
- 
-

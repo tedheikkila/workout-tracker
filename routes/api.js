@@ -1,7 +1,6 @@
 const db = require("../models")
 const router = require("express").Router();
 
-
 //gets last workout
 router.get("/api/workouts", (req, res) => {
   db.Workout.find({})
@@ -49,6 +48,5 @@ router.put("/api/workouts/:id", (req, res) => {
       res.json(err)
     })
 })
-
 
 module.exports = router;
